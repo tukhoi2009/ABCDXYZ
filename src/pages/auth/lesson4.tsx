@@ -7,9 +7,6 @@ interface Student {
     score: string;
     msv: string;
     status?: boolean;
-    
-
-
 }
 export default function loginPage() {
    const [students, setStudents] = useState<Student[]>([
