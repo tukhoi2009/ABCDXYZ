@@ -1,0 +1,96 @@
+import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+
+
+function  area(l:number, w: number) {
+  return l*w
+}
+let l = 10
+let w = 5
+console.log(area)
+
+
+const check = (c:number) => {
+    return (c <=10 && c >= 0) ? true : false;
+  }
+  if (check(11)) {
+    console.log("Trong khoang");
+  } else {
+    console.log("Ngoai khoang");
+  }
+
+
+
+
+
+
+
+
+
+export default function App() {
+  const Ten = "Tu Minh Khoi"
+  let age = 17
+  let address = "Mars "
+  let email = "tukhoi2009@gmail.com"
+  let isStudent = true
+  const name = "ABCDXYZ"
+  let diem = 2
+  if (diem >=8) {
+    console.log("Gioi")
+  } else if (diem < 8  && diem >=5) {
+    console.log("Kha")
+    
+
+  } else {
+    console.log("Trung Binh")
+  }
+  console.log('Xin chao ban. Toi ten la  ${name}')
+  let season = "A"
+  switch (season){
+    case "Summer":
+      console.log("Hot")
+      break
+    case "Winter":
+      console.log("Cold")
+      break
+    case "Spring":
+      console.log("Warmer than Winter")
+      break
+    case "Fall":
+      console.log("Colder than Summer")
+      break
+    default: 
+      console.log("Ko co mua nao")
+  }
+  (diem >=8) ? console.log("Gioi"): ( diem >=5) ? console.log("Kha"): (diem <5) ? console.log("Trung Binh"):
+  return (   
+
+  <View style={styles.container}>
+    
+  
+    
+
+    </View>
+
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 30,
+    flex:1,
+    backgroundColor: '#fff',
+    flexDirection: 'row',
+    gap: 10,
+    alignItems: "center",
+    justifyContent: "space-between"
+  },
+  box: {
+    width:100,
+    height:100,
+    backgroundColor: 'red'
+  }
+
+
+
+
+})
